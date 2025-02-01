@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FAVICONS -->
+  <link rel="icon" href="../img/favicon.png" />
+  <!-- for IOS -->
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
+  <!-- for ANDROID -->
+  <link rel="manifest" href="../manifest.webmanifest" />
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="../css/general.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/queries.css" />
+
+  <script defer src="../js/admin.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <title>Admin</title>
+</head>
+
+<body>
+  <div class="admin-container">
+    <!-- ===============ADMIN NAV================= -->
+    <nav class="admin-nav">
+      <ul>
+        <li>
+          <a href="#" class="admin-nav-link dash">
+            <span class="admin-icon-box"><ion-icon class="admin-icon" name="home-outline"></ion-icon>
+            </span>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="admin-nav-link user">
+            <span class="admin-icon-box ">
+              <ion-icon class="admin-icon" name="people-outline"></ion-icon>
+            </span>
+
+            <span class="title">Users</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="admin-nav-link shipments">
+            <span class="admin-icon-box">
+              <ion-icon class="admin-icon" name="cube-outline"></ion-icon>
+            </span>
+            <span class="title">Shipment</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="admin-nav-link setting">
+            <span class="admin-icon-box">
+              <ion-icon class="admin-icon" name="cog-outline"></ion-icon>
+            </span>
+            <span class="title">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="admin-nav-link log-out">
+            <span class="admin-icon-box">
+              <ion-icon class="admin-icon" name="log-out-outline"></ion-icon>
+            </span>
+            <span class="title">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <!-- ================heading======================== -->
+      <div class="admin-heading">
+        <div class="menu-box">
+          <ion-icon class="admin-icon" name="menu-outline"></ion-icon>
+        </div>
+        <div class="admin-logo-box">
+          <img src="../img/logo.png" alt="Kingsantold logo" class="admin-logo" />
+        </div>
+      </div>
+      <!--================ dashboard ===================-->
+      <div class="dashboard">
+        <!-- ==================CARDS ================-->
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1.8654</div>
+              <div class="cardName">Daily visitors</div>
+            </div>
+            <div>
+              <div class="iconBox">
+                <ion-icon name="sunny-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">1.8654</div>
+              <div class="cardName">weekly visitors</div>
+            </div>
+            <div>
+              <div class="iconBox">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">1.8654</div>
+              <div class="cardName">monthly visitors</div>
+            </div>
+            <div>
+              <div class="iconBox">
+                <ion-icon name="calendar-number-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">1.8654</div>
+              <div class="cardName">Orders</div>
+            </div>
+            <div>
+              <div class="iconBox">
+                <ion-icon name="cart-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================order details list=============== -->
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2 class="heading-tertiary">Recent Orders</h2>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Service</td>
+                  <td>Units Requested</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Apple Macbook</td>
+                  <td><span class="tag tag--import">Import</span></td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Bag of Rice</td>
+                  <td><span class="tag tag--export">Export</span></td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td>Mercedes Benz GLE</td>
+                  <td><span class="tag tag--import">Import</span></td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- =======================RECENT CUSTOMERS================ -->
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2 class="heading-tertiary">Recent customers</h2>
+            </div>
+            <div class="customer-box">
+              <p class="customerName">David Mark <span>david@gmail.com</span></p>
+              <p class="customerName">Spinall Mathews <span>spinall@gmail.com</span></p>
+              <p class="customerName">Yusuf mohammed <span>yusuf@gmail.com</span></p>
+              <p class="customerName">bamanga usman <span>Bamanga@gmail.com</span></p>
+              <p class="customerName">Abdul mustapha <span>Abdul12@gmail.com</span></p>
+              <p class="customerName">Musa abduljabar <span>Musa@gmail.com</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ==================users section================= -->
+      <div class="users-section hidden">
+        <div class="users-list">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2 class="heading-tertiary">Users</h2>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Email</td>
+                  <td>DOB</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Hamisu Lakwara</td>
+                  <td>Hamisu@gmail.com</td>
+                  <td>1/12/2001</td>
+                </tr>
+                <tr>
+                  <td>Yusuf Mohammed</td>
+                  <td>Yusuf123@gmail.com</td>
+                  <td>1/12/2001</td>
+                </tr>
+                <tr>
+                  <td>Abdulkareem Abiola</td>
+                  <td>Abdul432@gmail.com</td>
+                  <td>1/12/2001</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================shipments section================== -->
+      <div class="shipment-section hidden">
+        <div class="shipment">
+          <div class="recentOrders">
+            <div class="cardHeader head">
+              <h2 class="heading-tertiary">Recent Shipment</h2>
+              <div class="iconBox add-ship">
+                <ion-icon name="add-circle-outline" class="add-ship-icon"></ion-icon>
+                <ion-icon name="close-circle-outline" class="close-ship-icon hidden"></ion-icon>
+              </div>
+            </div>
+
+            <table class="ship-table">
+              <thead>
+                <tr>
+                  <td>Image</td>
+                  <td>Product Name</td>
+                  <td>Destination</td>
+                  <td>Expected Date of Delivery</td>
+                  <td>Units</td>
+                  <td>Service</td>
+                  <td></td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><img src="../img/farm.jpeg" alt="cashew" class="product-image"></td>
+                  <td>Cashew</td>
+                  <td>Maldives</td>
+                  <td>12/3/2025</td>
+                  <td>1000</td>
+                  <td><span class="tag tag--import">Import</span></td>
+                  <td>
+                    <span class="edit">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </span>
+                    <span class="delete">
+                      <ion-icon name="trash-outline"></ion-icon>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../img/rice.jpeg" alt="cashew" class="product-image"></td>
+                  <td>Rice</td>
+                  <td>Colombia</td>
+                  <td>20/4/2025</td>
+                  <td>3000</td>
+                  <td><span class="tag tag--import">Import</span></td>
+                  <td>
+                    <span class="edit">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </span>
+                    <span class="delete">
+                      <ion-icon name="trash-outline"></ion-icon>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Image</td>
+                  <td>Product Name</td>
+                  <td>Destination</td>
+                  <td>Expected Date of Delivery</td>
+                  <td>Units</td>
+                  <td><span class="tag tag--import">Import</span></td>
+                  <td>
+                    <span class="edit">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </span>
+                    <span class="delete">
+                      <ion-icon name="trash-outline"></ion-icon>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- ===================shipment form==================== -->
+            <form id="shipment-form" class="form hidden" name="ship-form" method="post">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-tertiary u-margin-bottom-small">
+                  Fill in the details
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Product Name" id="pname" required>
+                <label for="pname" class="form__label">Product Name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Destination" id="destination" required>
+                <label for="destination" class="form__label">Delivery Destination</label>
+              </div>
+              <div class="form__group">
+                <input type="date" class="form__input" id="DOD" required>
+                <label for="DOD" class="form__label">Date of Delivery</label>
+              </div>
+
+              <div class="form__group">
+                <input type="number" class="form__input" placeholder="How many units" id="unit" required>
+                <label for="unit" class="form__label">How many units</label>
+              </div>
+
+              <div class="form__group">
+                <input type="file" class="form__input" id="product-image" required>
+              </div>
+
+              <div class="u-margin-top-big">
+                <button type="submit" class="btn btn--form" name="ship-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- ===================settings section=================== -->
+      <div class="settings-section hidden">
+        <div class="settings">
+          <div class="recentOrders">
+            <div class="cardHeader head">
+              <h2 class="heading-tertiary">Settings</h2>
+            </div>
+            <div class="settings-box">
+              <ul class="settings-list">
+                <li>
+                  <span><strong>Email:</strong></span>
+                  <span>
+                    [Client Email]
+                  </span>
+                </li>
+                <li>
+                  <span><strong>Password:</strong> </span>
+                  <span>
+                    ******
+                  </span>
+                </li>
+              </ul>
+              <button class="btn btn--form edit-btn">Edit</button>
+            </div>
+
+            <!-- =====================settings form=================== -->
+            <form id="settings-form" class="form" name="settings-form" method="post">
+              <div class="settings-heading u-margin-bottom-medium">
+                <h2 class="heading-tertiary u-margin-bottom-small">
+                  Fill in the details
+                </h2>
+                <span class="exit-btn">
+                  <ion-icon name="close-circle-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Email Address" id="admin-email" required>
+                <label for="admin-email" class="form__label">Email Address</label>
+              </div>
+
+              <div class="form__group">
+                <input type="password" class="form__input" placeholder="New password" id="admin-pass" required>
+                <label for="admin-pass" class="form__label">New Password</label>
+              </div>
+              <div class="form__group">
+                <input type="password" class="form__input" placeholder="Confirm password" id="confirm-pass" required>
+                <label for="confirm-pass" class="form__label">Confirm Password</label>
+              </div>
+
+              <div class="u-margin-top-big">
+                <button type="submit" class="btn btn--form" name="ship-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- ==================popup==================== -->
+      <div class="popup-div hidden">
+        <div class="card-box">
+          <h2 class="heading-tertiary">Confirm?</h2>
+          <p>Are you sure?</p>
+          <button class="btn yes-btn">Yes</button>
+          <button class="btn no-btn">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

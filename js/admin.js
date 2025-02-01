@@ -64,11 +64,22 @@ const collapseNav = function () {
   main.classList.toggle("active");
 };
 
+const reduceNav = function () {
+  navigation.classList.toggle("show");
+
+  if (navigation.classList.contains("show")) {
+    collapseNav();
+  } else {
+    collapseNav();
+  }
+};
+
 toggle.addEventListener("click", collapseNav);
 
 // dashboard toggle
 dashBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  reduceNav();
   dashboard.classList.remove("hidden");
   users.classList.add("hidden");
   shipment.classList.add("hidden");
@@ -77,6 +88,7 @@ dashBtn.addEventListener("click", function (e) {
 // nav toggle
 userbtn.addEventListener("click", function (e) {
   e.preventDefault();
+  reduceNav();
   dashboard.classList.add("hidden");
   users.classList.remove("hidden");
   shipment.classList.add("hidden");
@@ -85,6 +97,7 @@ userbtn.addEventListener("click", function (e) {
 // shipment toggle
 shipmentBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  reduceNav();
   dashboard.classList.add("hidden");
   shipment.classList.remove("hidden");
   users.classList.add("hidden");
@@ -120,6 +133,7 @@ deleteShipmentForm.forEach((item) => {
 
 settingsBtn.addEventListener("click", function (e) {
   e.preventDefault();
+  reduceNav();
   dashboard.classList.add("hidden");
   shipment.classList.add("hidden");
   users.classList.add("hidden");

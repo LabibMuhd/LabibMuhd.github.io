@@ -20,6 +20,23 @@ const currentYear = new Date().getFullYear();
 yearEL.textContent = currentYear;
 
 // REVEAL SECTIONS
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
+
+//   if (!entry.isIntersecting) return;
+
+//   entry.target.classList.remove("section--hidden");
+//   observer.unobserve(entry.target);
+// };
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.15,
+// });
+// allSections.forEach(function (section) {
+//   sectionObserver.observe(section);
+//   section.classList.add("section--hidden");
+// });
+
 const revealSection = function (entries, observer) {
   const [entry] = entries;
 
@@ -28,13 +45,28 @@ const revealSection = function (entries, observer) {
   entry.target.classList.remove("section--hidden");
   observer.unobserve(entry.target);
 };
+
+// Create the IntersectionObserver
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
   threshold: 0.15,
 });
+
+// Add the hidden class initially to all sections
 allSections.forEach(function (section) {
-  sectionObserver.observe(section);
   section.classList.add("section--hidden");
+  sectionObserver.observe(section);
+});
+
+// Check if any sections are already in view on page load
+window.addEventListener("load", () => {
+  allSections.forEach(function (section) {
+    // Check if the section is already in view (using IntersectionObserver API)
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight * 0.15) {
+      section.classList.remove("section--hidden");
+    }
+  });
 });
 
 // SIGN UP

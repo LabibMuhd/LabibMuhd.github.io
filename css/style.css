@@ -42,6 +42,12 @@
   align-items: center;
   padding: 0 2rem;
 }
+.main-nav {
+  position: fixed;
+  top: 2rem;
+  right: 10rem;
+  z-index: 1500;
+}
 .main-nav-list {
   list-style: none;
   display: flex;

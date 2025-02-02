@@ -13,6 +13,7 @@ const noBtn = document.querySelector(".no-btn");
 const dashboard = document.querySelector(".dashboard");
 const users = document.querySelector(".users-section");
 const shipment = document.querySelector(".shipment-section");
+const shipmentForm = document.querySelector("#shipment-form");
 const settings = document.querySelector(".settings-section");
 const settingsForm = document.querySelector("#settings-form");
 const settingsBox = document.querySelector(".settings-box");

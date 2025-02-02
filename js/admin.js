@@ -50,11 +50,11 @@ const toggleShipmentForm = () => {
 };
 
 // Active Link Handling
-const activeLink = function (e) {
+const activeLink = function () {
   list.forEach((item) => {
     item.classList.remove("hovered");
   });
-  e.target.classList.add("hovered");
+  this.classList.add("hovered");
 };
 
 // Navigation Collapse
@@ -70,8 +70,8 @@ toggle.addEventListener("click", collapseNav);
 
 // Nav Item Click
 list.forEach((item) =>
-  item.addEventListener("click", (e) => {
-    activeLink(e);
+  item.addEventListener("click", function () {
+    activeLink.call(this);
     collapseNav();
   })
 );

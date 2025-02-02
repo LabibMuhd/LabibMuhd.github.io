@@ -61,8 +61,7 @@
   .admin-nav {
     left: -30rem;
   }
-  .admin-nav.active,
-  .show {
+  .admin-nav.active {
     width: 30rem;
     left: 0;
   }
@@ -70,8 +69,7 @@
     width: 100%;
     left: 0;
   }
-  .main.active,
-  .show {
+  .main.active {
     left: 30rem;
   }
   .cardBox {

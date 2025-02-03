@@ -340,7 +340,7 @@
   margin-bottom: 2rem;
 }
 input[type="date"]::-webkit-datetime-edit {
-  color: #555;
+  color: #25ab97;
   /* padding: 1rem; */
 }
 input[type="date"]::-webkit-datetime-edit-fields-wrapper {

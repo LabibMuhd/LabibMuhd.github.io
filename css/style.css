@@ -339,14 +339,9 @@
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
-input[type="date"]::-webkit-datetime-edit {
-  color: #25ab97;
-  /* padding: 1rem; */
-}
 input[type="date"]::-webkit-datetime-edit-fields-wrapper {
-  background-color: inherit;
+  background-color: #fff;
   width: 90%;
-  padding: 1rem;
 }
 .form__input,
 .form__input[type="file"] {

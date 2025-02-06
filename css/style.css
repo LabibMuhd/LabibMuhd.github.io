@@ -339,6 +339,9 @@
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
+input[type="date"] {
+  appearance: none;
+}
 input[type="date"]::-webkit-datetime-edit-fields-wrapper {
   background-color: #fff;
   width: 90%;

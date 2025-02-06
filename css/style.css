@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 /*****************************/
 /* HEADER */
 /****************************/
@@ -117,7 +119,7 @@
   font-size: 2rem;
   margin-bottom: 2.4rem;
   white-space: nowrap;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
   color: #25ab97;
 }
 .item-container {
@@ -126,7 +128,7 @@
   margin: 0 auto;
   padding: 0 4rem;
   /* margin-bottom: 2rem; */
-  overflow-x: auto;
+  overflow-x: scroll;
   position: relative;
 }
 .item {
@@ -144,9 +146,9 @@
 .item:hover {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
-.item-container::-webkit-scrollbar {
+/* .item-container::-webkit-scrollbar {
   display: none;
-}
+} */
 .item-name {
   font-size: 2.4rem;
   font-weight: 600;

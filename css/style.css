@@ -81,7 +81,6 @@
   background-color: #28b485;
   transition: all 0.3s;
 }
-
 .main-nav-link.nav-login:hover,
 .main-nav-link.nav-login:active {
   background-color: #25ab97;
@@ -345,6 +344,7 @@ input[type="date"] {
   appearance: none;
   -webkit-appearance: none; /* Chrome, Safari */
   -moz-appearance: none; /* Firefox */
+  background-color: #fff;
 }
 input[type="date"]::-webkit-datetime-edit-fields-wrapper {
   background-color: #fff;

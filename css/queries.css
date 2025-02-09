@@ -4,6 +4,14 @@
     font-size: 75%;
   }
 }
+/*****************************/
+/* BELOW 1344PX (SMALLER LAPTOPS) */
+/****************************/
+@media only screen and (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
 
 /* TABLET LANDSCAPE 1200px */
 @media only screen and (max-width: 75em) {
@@ -29,7 +37,6 @@
   html {
     font-size: 50%;
   }
-
   .book {
     background-image: linear-gradient(
         to right,

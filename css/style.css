@@ -340,7 +340,8 @@
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
-input[type="date"] {
+input[type="date"],
+select {
   appearance: none;
   -webkit-appearance: none; /* Chrome, Safari */
   -moz-appearance: none; /* Firefox */

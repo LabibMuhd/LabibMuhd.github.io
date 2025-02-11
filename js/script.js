@@ -1,4 +1,7 @@
 let yearEL = document.querySelector(".year");
+let btnNavEL = document.querySelector(".mobile-nav");
+let navEL = document.querySelector(".nav-box");
+
 const btnScrollTo = document.querySelector(".btn--start");
 const signUpSection = document.querySelector("#signup");
 const allSections = document.querySelectorAll(".section");
@@ -7,7 +10,8 @@ const loginForm = document.querySelector("#popup");
 const orderForm = document.querySelector("#pform");
 const formContainer = document.querySelector("#popup-form");
 const signUp = document.querySelector("#sign_up");
-const contactUs = document.querySelector(".nav-cta");
+const orderHistory = document.querySelector(".order");
+const logout = document.querySelector(".nav-logout");
 const login = document.querySelector(".nav-login");
 const close = document.querySelector(".popup__close");
 const pass = document.querySelector("#pass");
@@ -62,12 +66,17 @@ signUp.addEventListener("submit", function (e) {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  contactUs.classList.remove("hidden");
+  orderHistory.classList.remove("hidden");
+  logout.classList.remove("hidden");
   login.classList.add("hidden");
   loginForm.classList.add("hidden");
+  navEL.classList.toggle("login");
 
   btnScrollTo.addEventListener("click", function (e) {
     window.open("#popup-form", "_self");
+  });
+  btnNavEL.addEventListener("click", function () {
+    navEL.classList.toggle("nav-open");
   });
 });
 forgotPass.addEventListener("click", function (e) {

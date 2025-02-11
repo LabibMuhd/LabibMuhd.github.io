@@ -134,6 +134,9 @@
     width: 100%;
     left: 0;
   }
+  .history-table {
+    overflow: scroll;
+  }
 
   .menu-box {
     z-index: 1001;

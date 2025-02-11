@@ -135,19 +135,35 @@
   top: 0;
   width: 30%;
   /* height: 50rem; */
-
+  filter: brightness(0.5);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
   /* transform: translateX(20%); */
 }
+.item::after {
+  content: "Not Available";
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 7%;
+  right: -18%;
+
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
 .item:hover {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
-/* .item-container::-webkit-scrollbar {
-  display: none;
-} */
+.item img {
+  filter: brightness(0.2);
+  opacity: 50%;
+}
 .item-name {
   font-size: 2.4rem;
   font-weight: 600;
@@ -189,7 +205,7 @@
   text-transform: uppercase;
   color: #333;
   border-radius: 100px;
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
 }
 .tag--import {
   background-color: #94d82d;
@@ -899,4 +915,10 @@ td:last-child {
 }
 .u-margin-bottom-large {
   margin-bottom: 8rem;
+}
+/*****************************/
+/* orders history SECTION */
+/****************************/
+.order-table td {
+  color: #fff;
 }

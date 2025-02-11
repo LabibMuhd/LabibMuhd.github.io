@@ -42,6 +42,7 @@
       <nav class="main-nav ">
         <ul class="main-nav-list">
           <li><a class="main-nav-link nav-login" href="#popup">Login</a></li>
+          <li><a class="main-nav-link nav-login" href="#popup-orders">Order History</a></li>
           <li><a class="main-nav-link nav-cta color-red hidden" href="#popup-form">Logout</a></li>
         </ul>
       </nav>
@@ -72,7 +73,7 @@
         <div class="item">
           <img src="img/rice.jpeg" alt="rice" class="schedule-img" />
           <div class="item-content">
-            <span class="tag tag--import">Import</span>
+            <span class="tag tag--import u-margin-bottom-small">Import</span>
             <p class="item-name">Rice</p>
             <ul class="item-details">
               <li class="item-detail">
@@ -99,13 +100,13 @@
                 <span>12th December 2025</span>
               </li>
             </ul>
-            <button class="btn btn--start btn--order">Order now</button>
+            <!-- <button class="btn btn--start btn--order">Order now</button> -->
           </div>
         </div>
         <div class="item">
           <img src="img/farm.jpeg" alt="Cashew" class="schedule-img" />
           <div class="item-content">
-            <span class="tag tag--import">Import</span>
+            <span class="tag tag--import u-margin-bottom-small">Import</span>
             <p class="item-name">Cashew</p>
             <ul class="item-details">
               <li class="item-detail">
@@ -132,13 +133,13 @@
                 <span>12th December 2025</span>
               </li>
             </ul>
-            <button class="btn btn--start btn--order">Order now</button>
+            <!-- <button class="btn btn--start btn--order">Order now</button> -->
           </div>
         </div>
         <div class="item">
           <img src="img/pharm.jpg" alt="pharmaceuticals" class="schedule-img" />
           <div class="item-content">
-            <span class="tag tag--export">Export</span>
+            <span class="tag tag--export u-margin-bottom-small">Export</span>
             <p class="item-name">pharmaceuticals</p>
             <ul class="item-details">
               <li class="item-detail">
@@ -165,7 +166,7 @@
                 <span>12th December 2025</span>
               </li>
             </ul>
-            <button class="btn btn--start btn--order">Order now</button>
+            <!-- <button class="btn btn--start btn--order">Order now</button> -->
           </div>
         </div>
       </div>
@@ -472,6 +473,43 @@
       </form>
     </div>
 
+  </div>
+
+  <div class="popup" id="popup-orders">
+    <div class="container">
+      <a href="#" class="popup__close">&times;</a>
+      <div class="u-margin-top-medium u-margin-bottom-medium">
+        <h2 class="heading-secondary u-margin-bottom-small">
+          History
+        </h2>
+      </div>
+      <div class="history-table">
+        <table class="order-table">
+          <thead>
+            <tr>
+              <td>Order ID</td>
+              <td>Product Name</td>
+              <td>Destination</td>
+              <td>Date of Delivery</td>
+              <td>Units</td>
+              <td>Service</td>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>123456</td>
+              <td>Cashew</td>
+              <td>Maldives</td>
+              <td>12/3/2025</td>
+              <td>1000</td>
+              <td><span class="tag tag--import">Import</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </body>
 
